@@ -1,0 +1,11 @@
+<view class="container">
+<view class="section">
+<!--<view class="section__title">点击头像重新设置：</view>-->
+  <image bindtap="chooseImage" mode="scaleToFill" src="{{avatar}}"></image>
+  <text class="tips">{{tips}}</text>
+</view>
+<view class="section">
+  
+<!--<button type="primary"  loading="{{loading}}"  bindtap="save"> 保存 </button>-->
+</view>
+</view>

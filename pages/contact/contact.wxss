@@ -1,0 +1,21 @@
+.container{
+    padding: 100rpx 20rpx;
+    height: 100%;
+    display: block;
+}
+.container .tel{
+    display: block;
+    margin-bottom: 50rpx;
+}
+.container .email{
+    margin-bottom: 50rpx;
+    display: block;
+}
+.container .addr{
+    display: block;
+}
+.container .title{
+    margin-bottom: 10rpx;
+    display: block;
+    color: gray;
+}

@@ -1,0 +1,6 @@
+<view class="container">
+<text class="tel"><text class="title">官网：</text>www.getweapp.com</text>
+<text class="tel"><text class="title">电话：</text>021-67866532</text>
+<text class="email"><text class="title">Email：</text>support@getweapp.com</text>
+<text class="addr"><text class="title">地址：</text>上海市松江区广富林路658弄215号1406室</text>
+</view>

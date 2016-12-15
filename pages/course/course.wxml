@@ -1,0 +1,59 @@
+<image src="{{course.avatar}}-marked3" class="avatar" mode="aspectFill"></image>
+
+<!-- detail content start -->
+<view class="detail-box">
+    <view class="detail-title">{{course.title}}</view>
+    <view class="detail-content">
+        <view class="detail-price">
+            <text class="new-price">¥{{course.price}}</text>
+        </view>
+        <text class="detail-other">报名截止时间：{{ course.startTime }}</text>
+    </view>
+    <view class="icon-img"></view>
+</view>
+<!-- / detail content end -->
+
+<!-- error start -->
+<view class="otherAddress">
+    <text>目标：{{course.subject}}</text>
+    <text>课时：{{course.period}}</text>
+    <text>学分：{{course.score}}</text>
+    <text>授课老师：{{course.teacher}}</text>
+    
+    
+</view>
+<!-- / error end -->
+
+<view class="fight-group-title">*上课前5分钟停止报名</view>
+
+<!-- fight group start -->
+<block wx:if="{{course.members.length}}">
+    <view class="fight-group">
+        <view class="title-box">已报名</view>
+        <view class="group-list">
+            <navigator url="../order/order?courseId={{course.courseId}}" class="bordrer-top">
+                <view class="item-group">
+                    <image src="{{course.members[0].avatar}}" class="user-img"></image>
+                    <view class="group-item-center">
+                        <text class="user-name">{{course.members[0].name}}</text>
+                        <view class="group-other">已报名<text class="red-color">{{course.members.length}}</text>人</view>
+                    </view>
+                    <view class="join-group">详情</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</block>
+<!-- / fight group end -->
+
+<!-- goods detail start -->
+<view class="goods-detail">
+    <view class="title-box">适合同学</view>
+    <view class="goods-detail-text">{{course.target}}</view>
+    <view class="title-box">内容提纲</view>
+    <view class="goods-detail-text" wx:for="{{course.texts}}" wx:key="*this">{{item}}</view>
+    
+</view>
+<!-- / goods detail end -->
+
+<view class="join" wx:if="{{show}}" bindtap="payment">{{tips}}</view>

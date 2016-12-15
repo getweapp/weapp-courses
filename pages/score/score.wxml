@@ -1,0 +1,11 @@
+<view class="total"><text>{{score}}</text>总学分</view>
+
+<view class="tab-panel">
+    <view class="test-list">
+        <view class="test-item" wx:for="{{scores}}" wx:key="{{item.id}}">
+            <view class="test-item-t">获得学分：{{item.score}}<view class="test-item-b" style="float:right">{{item.created}}</view></view>
+            
+            <view class="test-item-b">{{item.text}}</view>
+        </view>
+    </view>
+</view>

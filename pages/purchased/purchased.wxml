@@ -1,0 +1,38 @@
+<view>
+    <scroll-view scroll-y="true" bindscrolltoupper="refresh" bindscrolltolower="update" class="layout">
+        <view class="tips" wx:if="{{orders.length==0}}">
+            <image src="../../images/tips.png"></image> <text>你还没有购买任何课程</text>
+        </view>
+        <!-- list start -->
+        <navigator wx:for="{{orders}}" wx:key="" class="hot-item-box" url="../order/order?courseId={{item.course.courseId}}">
+            <view class="hot-item-top">
+                <view class="hot-img">
+                    <image mode="aspectFill" src="{{item.course.avatar}}-marked3"></image>
+                </view>
+
+                <view class="hot-item-top-right">
+                    <text class="hot-item-title">{{item.course.title}}</text>
+                    <view class="hot-item-price">¥{{item.course.price}}</view>
+                    <view class="hot-item-No-time-box">
+                        <view class="hot-item-No"><text class="text-red">{{item.course.members.length}}</text>人报名</view>
+                        <text class="hot-item-time">上课倒计时 {{item.course._countdown}}</text>
+                    </view>
+                </view>
+            </view>
+            
+            <view class="hot-item-btm">
+                <view class="hot-item-user-box">
+                    <view wx:for="{{item.course.members}}" wx:if="{{index < 5}}" wx:key="item.peopleId" class="hot-item-user-img">
+                        <image src="{{item.avatar}}"></image>
+                    </view>
+                </view>
+                <text class="hot-item-btn">详情</text>
+            </view>
+        </navigator>
+        <!-- / list end -->
+
+        <!-- prompt message start -->
+        <text class="{{(total != 0 && total < page*10) ? 'promptShow' : 'promptHide'}}">没有更多内容了</text>
+        <!-- / prompt message end -->
+    </scroll-view>
+</view>

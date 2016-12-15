@@ -1,0 +1,32 @@
+.container{
+    text-align: center;
+    padding: 20rpx;
+    height: 100%;
+    display: block;
+}
+.container .logo{
+    margin: 0 auto;
+    width: 300rpx;
+    height: 300rpx;
+    margin-top: 100rpx;
+}
+.container .name{
+    margin-bottom: 20rpx;
+    display: block;
+}
+.container .site{
+    margin-bottom: 30rpx;
+    display: block;
+    color: gray;
+}
+.container .info{
+    margin-bottom: 40rpx;
+    display: block;
+    text-align: left;
+}
+
+.container .copyright{
+    font-size: 31rpx;
+    display: block;
+    color: gray;
+}

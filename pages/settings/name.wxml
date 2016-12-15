@@ -1,0 +1,10 @@
+<view class="container">
+<view class="section">
+<view class="section__title">请设置你的昵称：</view>
+  <input bindinput="bindKeyInput" maxlength="20" autofocus placeholder="{{name}}" />
+</view>
+<view class="section">
+  
+<button type="primary"  loading="{{loading}}"  bindtap="save"> 保存 </button>
+</view>
+</view>

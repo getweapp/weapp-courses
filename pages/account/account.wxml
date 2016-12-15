@@ -1,0 +1,59 @@
+<view>
+    <!-- header start -->
+    <view class="user-header">
+        <view class="user-img">
+            <view class="iconfont avatar"><image src="{{avatar}}"></image></view>
+        </view>
+<view wx:if="{{name}}" class="user-name">{{ name }}</view>
+        <view wx:if="{{!name}}" class="login-btn" bindtap="loginFun">{{ tips }}</view>
+    </view>
+    <!-- / header end -->
+
+    <!-- article start -->
+    <view class="user-article">
+        <navigator url="../score/score">
+            <view class="user-order">
+                <text class="order-all">我的学分</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+        <navigator url="../classmates/classmates">
+            <view class="user-order">
+                <text class="order-all">我的同学</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+        <navigator url="../settings/avatar">
+            <view class="user-order">
+                <text class="order-all">修改头像</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+         <navigator url="../settings/name">
+            <view class="user-order">
+                <text class="order-all">修改昵称</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+        <navigator url="../about/about">
+            <view class="user-order">
+                <text class="order-all">关于我们</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+        <navigator url="../contact/contact">
+            <view class="user-order">
+                <text class="order-all">联系方式</text>
+                <view class="order-look">查看<view class="iconfont icon-right"></view></view>
+            </view>
+        </navigator>
+
+            <view wx:if="{{name}}" bindtap="logout" class="user-order">
+                <text class="order-all">退出</text>
+            </view>
+   
+     
+    </view>
+    <!-- / article end -->
+
+</view>

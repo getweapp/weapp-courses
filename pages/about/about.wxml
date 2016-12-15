@@ -1,0 +1,9 @@
+<view class="container">
+<image class="logo" src="http://ogth2odq7.qnssl.com/G-%20%281%29.png"></image>
+<text class="name">GetWeApp</text>
+<text class="site">微信小程序学习社群</text>
+<text class="info">从微信小程序模板源码开始，让微信小程序开发更迅速、简单：）</text>
+<text class="info">一线资深工程师授课，从基础知识到完整的产品，从小程序前端到后端，全栈开发。</text>
+<text class="copyright">© 2014-2016 上海昀活网络科技有限公司</text>
+
+</view>

@@ -1,0 +1,48 @@
+<view>
+
+    <!-- detail start -->
+    <navigator url="../course/course?id={{course.courseId}}">
+        <view class="detail-box">
+            <image class="detail-img" mode="aspectFill" src="{{course.avatar}}-marked3"></image>
+            <view class="detail-content">
+                <text class="detail-title">{{course.title}}</text>
+                
+                <view class="price">
+                    <text class="new-price">¥{{course.price}}</text>
+        
+                </view>
+                <text class="detail-text">学分：{{course.score}}</text>
+                <text class="detail-text">授课老师：{{course.teacher}}</text>
+            </view>
+        </view>
+    </navigator>
+    <!-- / detail end -->
+
+    <!-- countdown start -->
+    <view class="countdown">
+        <view class="countdown-top"> 离上课还差<text class="color-red">{{course._countdown}}</text></view>
+        <text wx:if="{{show}}" class="countdown-btm">立即报名</text>
+    </view>
+    <!-- / countdown end -->
+
+    <!-- list start -->
+    <view class="group-lists-box">
+        <text class="group-lists-title">报名的同学</text>
+
+        <view class="group-lists-content">
+            <view wx:for="{{course.members}}" class="group-item-box" wx:key="item.peopleId">
+                <image class="group-user-img" src="{{item.avatar}}" ></image>
+                
+                <view class="group-item-content">
+                    <text class="group-item-name">{{item.name}}</text>
+                    <text class="group-item-title">{{item.created}}</text>
+                </view>
+
+                <block wx:if="{{index == 0}}">
+                    <view class="group-item-head">班长</view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <!-- /list  end -->
+</view>

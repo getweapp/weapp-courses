@@ -1,0 +1,18 @@
+.container{
+    padding: 20rpx;
+    display: block;
+}
+.section{
+    margin-top: 40rpx;
+}
+
+input{
+    margin-top: 20rpx;
+    border-bottom: 1rpx solid gray;
+    padding: 0 15rpx;
+}
+
+button{
+    display: block;
+    margin-top: 40rpx;
+}

@@ -1,0 +1,38 @@
+.total{
+    text-align: center;
+    padding: 20rpx;
+    color: darkgray;
+    font-size: 30rpx;
+}
+.total text{
+    display: block;
+    color: rgb(251,93,93);
+    font-size: 50rpx;
+    border-bottom: 10rpx double rgb(251,93,93);
+    width: 100rpx;
+    margin: 0 auto;
+    margin-bottom: 15rpx;
+}
+
+.test-list{
+	padding: 0 20rpx;
+}
+.question-list{
+	padding: 20rpx;
+}
+.test-item{
+	border-bottom: 1rpx solid #ddd;
+	padding: 20rpx 0;
+}
+.test-item-t{
+	font-size: 34rpx;
+}
+.test-item-b{
+	font-size: 30rpx;
+	color: #888;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}

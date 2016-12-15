@@ -1,0 +1,30 @@
+.container{
+    padding: 20rpx;
+    display: block;
+}
+.section{
+    margin-top: 40rpx;
+}
+
+.tips{
+    text-align: center;
+    color: #999;
+    margin:0 auto;
+    display: block;
+    height: 50rpx;
+}
+
+image{
+    margin: 0 auto;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    display: block;
+    margin-top: 50rpx;
+    margin-bottom: 20rpx;
+}
+
+button{
+    display: block;
+    margin-top: 40rpx;
+}
